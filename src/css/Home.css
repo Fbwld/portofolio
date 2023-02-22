@@ -1,0 +1,98 @@
+.tagline {
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    display: inline-block;
+    border-radius: 20px;
+    color: white;
+  }
+  button{
+    background-color: #8FE3CF;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 10px #8FE3CF;
+  }
+  .banner {
+    background-image: linear-gradient(to right, #002B5B, #256D85);
+    margin-top: 0;
+    padding: 160px 0 100px 0;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .banner h1 {
+    font-size: 65px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 1;
+    margin-bottom: 20px;
+    display: block;
+    color: #8FE3CF;
+} 
+  .banner p {
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    width: 96%;
+    text-align: justify;
+  }
+  .banner button {
+    color: #002B5B;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 40px;
+    letter-spacing: 0.8px;
+    border-radius: 30px;
+    padding: 7px;
+  }
+  .banner img {
+    animation: updown 3s linear infinite;
+    width: 95%;
+    max-width: 500px;
+    height: auto;
+  }
+  @keyframes updown {
+      0% {
+          transform: translateY(-20px);
+      }
+      50% {
+          transform: translateY(20px);
+      }
+      100% {
+          transform: translateY(-20px);
+      }
+  }
+  .icon-h{
+    color: #ffffff;
+    size: 14px;
+    margin-top: 20px;
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 3px 0px  #ffffff;
+    
+  }
+.icon-h:hover {
+    color:#8FE3CF;
+    transition: 0.5s;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 3px 0px #8FE3CF;
+}
+.icon-h:active {
+    color:#ffffff;
+    transition: 0.3s;
+}
+.icon-h-active {
+    color:#ffffff;
+    border-radius: 5px;
+}
+  .icon-widht{
+    width: 100%;
+  }
+  
