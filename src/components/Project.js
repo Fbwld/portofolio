@@ -8,6 +8,7 @@ import TrackVisibility from 'react-on-screen';
 import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/project1.png";
 import projImg2 from "../assets/img/project2.png";
+import projImg3 from "../assets/img/civil.jpeg";
 import "../css/ProjectCard.css";
 import AOS from 'aos';
 import "aos/dist/aos.css"
@@ -17,13 +18,33 @@ export function Project() {
   const projects = [
     {
       title: "Dumbmerch",
-      description: "Design & Development",
+      description: "This website is used for buying and selling all kinds of products.",
       imgUrl: projImg1,
+      urlgithub:"https://github.com/Fbwld/DumbMerch-BE-B34.git",
+      urlLink:"https://dumbmerch-by-febi.netlify.app/"
     },
     {
       title: "Waysbeans",
-      description: "Design & Development",
+      description: "A coffeeshop website that sells various types of coffee. In this application, we can make purchases and learn about coffee descriptions.",
       imgUrl: projImg2,
+      urlgithub:"https://github.com/Fbwld/WAYSBEANS-BE.git",
+      urlLink:"https://waysbeans-by-febi.netlify.app/"
+    },
+  ];
+  const android = [
+    {
+      title: "Calculator and Todo List",
+      description: "A calculator and to-do list application used to organize daily activities.",
+      imgUrl: projImg3,
+      urlgithub:"https://github.com/Fbwld/calculator-todolist.git",
+      urlLink:""
+    },
+    {
+      title: "Civil Calculator",
+      description: "A calculator application in civil engineering that can simplify calculations for concrete and roof components of a building",
+      imgUrl: projImg3,
+      urlgithub:"https://github.com/CivilCalculator/CivilCalculator.git",
+      urlLink:""
     },
   ];
   useEffect(() => {
@@ -38,22 +59,28 @@ export function Project() {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-                <h2 data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="linear">My Projects</h2>
+                <h2 
+                data-aos="fade-up" 
+                data-aos-duration="1000" 
+                data-aos-easing="linear"
+                style={{
+                    marginBottom:'60px'
+                }}
+                >
+                  My Projects
+                 </h2>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                  <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
+                  <Nav data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear" variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                      <Nav.Link eventKey="first">Web</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">Tab 2</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                      <Nav.Link eventKey="third">Android</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
-                      <Row data-aos="fade-up" data-aos-duration="2000">
+                      <Row data-aos="fade-right" data-aos-duration="2000">
                         {
                           projects.map((project, index) => {
                             return (
@@ -66,11 +93,19 @@ export function Project() {
                         }
                       </Row>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="second">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                    </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                    <Row data-aos="fade-right" data-aos-duration="2000">
+                        {
+                          android.map((project, index) => {
+                            return (
+                              <ProjectCard
+                                key={index}
+                                {...project}
+                                />
+                            )
+                          })
+                        }
+                      </Row>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>

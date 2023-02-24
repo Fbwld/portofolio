@@ -11,6 +11,7 @@
     transition: 0.5s;
     border-radius: 5px;
     cursor: pointer;
+    scale: 1.1;
 }
 .icon-h:active .text-h:active {
     color:#ffffff;
@@ -24,7 +25,8 @@
   width: 2px;
   height: 150px;
   background:#ffffff ;
-  margin-top: 40px;
+  margin-top: 30px;
+  margin-left: 10px;
 }
 .text-h{
     writing-mode: vertical-rl;
@@ -35,4 +37,7 @@
 }
 .fixed-bottom{
     padding: 0 100px 0 100px;
+}
+.ok-c{
+    width: 15px;
 }

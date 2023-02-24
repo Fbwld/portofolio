@@ -1,4 +1,5 @@
 /* eslint-disable import/prefer-default-export */
+import React from 'react';
 import {Button, Container, Nav, Navbar} from "react-bootstrap";
 import "../css/NavBar.css"
 

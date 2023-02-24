@@ -19,11 +19,13 @@ export function Skills() {
     <section className="skills" id="skills">
         <Container>
         <Row className="aligh-items-center">
-          <h1 data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="linear">My Experience</h1>
-          <p>
-          I have experience as a desktop developer for 2 years and as a web developer for 1 year.
-          </p>
-            <Col xs={12} md={6} xl={6} data-aos="fade-up" data-aos-duration="2000">
+          <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">My Experience</h1>
+          <div className="text-skill">
+            <p data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
+            Hi there! My name is Febi and I love learning about new technologies. I have experience as a web developer for about a year and as a desktop developer for 2 years. Here are some of the technologies I have been working with recently:
+            </p>
+          </div>
+            <Col className="d-felx" xs={12} md={6} xl={6} data-aos="fade-right" data-aos-duration="2000">
               <div className="s-left">
                 <h2>FrontEnd Developer</h2>
                 <div className="s-row" >
@@ -58,7 +60,7 @@ export function Skills() {
                 </div>
               </div> 
             </Col>
-            <Col xs={12} md={6} xl={6} data-aos="fade-up" data-aos-duration="2000">
+            <Col xs={12} md={6} xl={6} data-aos="fade-left" data-aos-duration="2000">
               <div className="s-right">
                 <h2>BackEnd Developer</h2>
                 <div className="s-row">
