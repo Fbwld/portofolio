@@ -1,39 +1,32 @@
+/* eslint-disable no-unused-vars */
+import React, { useEffect } from "react";
 import {Container, Row, Col} from "react-bootstrap";
 import "../css/Skills.css"
-import {bootstrap, css, express, Html5, javascript, mongodb, mysql, nodejs, postgresql, react } from "../assets/icon/index"
 import {GrMysql} from "react-icons/gr"
 import {SiMongodb, SiExpress, SiPostgresql, SiDelphi} from "react-icons/si"
 import {FaNodeJs, FaReact, FaCss3Alt, FaBootstrap} from "react-icons/fa"
 import {IoLogoHtml5, IoLogoJavascript} from "react-icons/io"
-import { ProgressBarSkill } from "./ProgressBarSkill";
+import {TbBrandReactNative} from "react-icons/tb"
+import AOS from 'aos';
+import "aos/dist/aos.css"
 
-export const Skills = () => {
+export function Skills() {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  });
   return (
-    <>
     <section className="skills" id="skills">
         <Container>
         <Row className="aligh-items-center">
-          <h1>My Experience</h1>
-          <div className="container">
-            <div className="card">
-              <div className="box">
-                <div className="percent">
-                  <svg>
-                    <circle cy={70} cx='70' r={70} />
-                    <circle cy={70} cx='70' r={70} />
-                  </svg>
-                  <div>
-                    <h2>90<span>%</span></h2>
-                  </div>
-                </div>
-                  <h2 className="text-pb">HTML</h2>
-              </div>
-            </div>
-          </div>
-            <Col xs={12} md={6} xl={6}>
+          <h1 data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="linear">My Experience</h1>
+          <p>
+          I have experience as a desktop developer for 2 years and as a web developer for 1 year.
+          </p>
+            <Col xs={12} md={6} xl={6} data-aos="fade-up" data-aos-duration="2000">
               <div className="s-left">
                 <h2>FrontEnd Developer</h2>
-                <div className="s-row">
+                <div className="s-row" >
                   <div className="s-column">
                     <div>
                       <h3><IoLogoHtml5 className="s-logo"/>Html</h3>
@@ -42,7 +35,7 @@ export const Skills = () => {
                     <div>
                       <h3><FaCss3Alt className="s-logo"/>CSS</h3>
                       <p>Experienced</p>
-                    </div> 
+                    </div>
                     <div>
                       <h3><FaBootstrap className="s-logo"/>Boostrap</h3>
                       <p>Experienced</p>
@@ -58,14 +51,14 @@ export const Skills = () => {
                     <p>Experienced</p>
                     </div>
                     <div>
-                      <h3><SiDelphi className="s-logo"/>Delphi</h3>
+                      <h3><TbBrandReactNative className="s-logo"/>ReactNative</h3>
                       <p>Experienced</p>
-                    </div>
+                    </div> 
                   </div>
                 </div>
               </div> 
             </Col>
-            <Col xs={12} md={6} xl={6}>
+            <Col xs={12} md={6} xl={6} data-aos="fade-up" data-aos-duration="2000">
               <div className="s-right">
                 <h2>BackEnd Developer</h2>
                 <div className="s-row">
@@ -99,6 +92,5 @@ export const Skills = () => {
         </Row>
         </Container>
     </section>
-    </>
   );
 }

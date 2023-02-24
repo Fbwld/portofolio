@@ -4,7 +4,7 @@ import {NavBar} from "./components/NavBar"
 import {Home} from "./components/Home"
 import {Skills} from "./components/Skills"
 import {Project} from "./components/Project"
-import {ProgressBarSkill } from './components/ProgressBarSkill';
+import { FixedContact } from './components/FixedContact';
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <Home />
       <Skills />
       <Project />
-      <ProgressBarSkill />
+      <FixedContact />
     </div>
   );
 }

@@ -1,6 +1,7 @@
+/* eslint-disable react/prop-types */
 import React, { useState, useEffect } from 'react';
 
-const TypingText = ({ text, speed }) => {
+function TypingText({ text, speed }) {
   const [displayText, setDisplayText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -21,6 +22,6 @@ const TypingText = ({ text, speed }) => {
   }, [currentIndex]);
 
   return <span>{displayText}</span>;
-};
+}
 
 export default TypingText;

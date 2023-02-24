@@ -1,11 +1,18 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable import/order */
+/* eslint-disable react/no-array-index-key */
+/* eslint-disable react/jsx-props-no-spreading */
+import React, { useEffect } from "react";
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
+import TrackVisibility from 'react-on-screen';
 import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/project1.png";
 import projImg2 from "../assets/img/project2.png";
-import TrackVisibility from 'react-on-screen';
-import "../css/ProjectCard.css"
+import "../css/ProjectCard.css";
+import AOS from 'aos';
+import "aos/dist/aos.css"
 
-export const Project = () => {
+export function Project() {
 
   const projects = [
     {
@@ -19,7 +26,10 @@ export const Project = () => {
       imgUrl: projImg2,
     },
   ];
-
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  });
   return (
     <section className="project" id="project">
       <Container>
@@ -28,7 +38,7 @@ export const Project = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-                <h2>My Projects</h2>
+                <h2 data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="linear">My Projects</h2>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
@@ -43,7 +53,7 @@ export const Project = () => {
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
-                      <Row>
+                      <Row data-aos="fade-up" data-aos-duration="2000">
                         {
                           projects.map((project, index) => {
                             return (
@@ -69,7 +79,7 @@ export const Project = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right"></img>
+      <img className="background-image-right" />
     </section>
   )
 }

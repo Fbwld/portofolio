@@ -1,0 +1,38 @@
+.icon-h,.text-h{
+    size: 40;
+    color: #ffffff;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    
+  }
+.icon-h:hover,.text-h:hover {
+    color:#8FE3CF;
+    transition: 0.5s;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.icon-h:active .text-h:active {
+    color:#ffffff;
+    transition: 0.3s;
+}
+.icon-h-active .text-h-active {
+    color:#ffffff;
+    border-radius: 5px;
+}
+.line-h{
+  width: 2px;
+  height: 150px;
+  background:#ffffff ;
+  margin-top: 40px;
+}
+.text-h{
+    writing-mode: vertical-rl;
+}
+.right-c{
+    position: absolute;
+    bottom: 0;
+}
+.fixed-bottom{
+    padding: 0 100px 0 100px;
+}

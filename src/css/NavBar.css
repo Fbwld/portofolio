@@ -14,6 +14,9 @@
   color: white ;
   font-size: large;
 }
+.n-left:hover {
+  color: #8FE3CF;
+}
 .n-right {
   flex: 1;
   display: flex;
@@ -35,7 +38,7 @@
   }
 }
 .n-wrapper{
-  background-image: linear-gradient(to right, #002B5B, #256D85);
+  background: #0a192f;
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -53,4 +56,14 @@
 .n-p-active {
   color:#ffffff;
   border-radius: 5px;
+}
+#button-n{
+  background:transparent;
+  border-color: #8FE3CF;
+  color: #8FE3CF;
+  margin-left: 30px;
+}
+#button-n:hover {
+  color: #0a192f  !important;
+  background-color: #8FE3CF!important ;
 }

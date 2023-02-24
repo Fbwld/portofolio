@@ -1,7 +1,7 @@
 .skills{
-    background-image: linear-gradient(to right, #002B5B, #256D85);
+    background: #0a192f;
     margin-top: 0;
-    padding: 100px 0 100px 0;
+    padding: 40px 0 100px 0;
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -50,4 +50,29 @@ h1{
     font-size: 45px;
       font-weight: 700;
     text-align: center;
+}
+
+
+.container-pb{
+    position: relative;
+    width: 900px;
+    display: flex;
+    justify-content: space-around;
+}
+.container-pb .card{
+    position: relative;
+    width: 170px;
+    background-color:transparent ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    border-radius: 4px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+ 
+}
+.container-pb .card:hover{
+transform: translateY(-10px);
 }
