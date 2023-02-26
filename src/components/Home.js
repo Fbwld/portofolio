@@ -9,7 +9,8 @@ import headerImg from "../assets/img/frame1.png";
 import TypingText from './TypingText';
 import "aos/dist/aos.css"
 
-export function Home() {
+export function Home({handleScroll}) {
+ 
   useEffect(() => {
     AOS.init();
     AOS.refresh();
@@ -28,7 +29,7 @@ export function Home() {
               <p className="parag-home">I am a programming enthusiast that graduated from Information Management. I am very interested in learning things in the field of Fullstack Developer, and deepen it by attending training at the DumbWays Indonesian Bootcamp. Active in using several programming, namely JavaScript</p>
             </div>
             <div>
-              <button id="button-connect" >Let’s Connect <SlArrowRightCircle/></button>
+              <button onClick={handleScroll} id="button-connect" >Let’s Connect <SlArrowRightCircle/></button>
             </div>
         </Col>
         <Col xs={12} md={6} xl={5}>

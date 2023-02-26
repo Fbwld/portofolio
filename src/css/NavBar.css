@@ -50,11 +50,11 @@
   cursor: pointer;
 }
 .n-p:active {
-  color:#ffffff;
+  color:#ffffff !important;
   transition: 0.3s;
 }
 .n-p-active {
-  color:#ffffff;
+  color:#ffffff !important;
   border-radius: 5px;
 }
 #button-n{

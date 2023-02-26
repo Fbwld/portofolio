@@ -1,0 +1,38 @@
+.getin{
+    background: #0a192f;
+    margin-top: 0;
+    padding: 60px 150px 100px 150px;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+.icon-g{
+    margin-left: 20px;
+    size: 40;
+    color: #ffffff;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.icon-g:hover{
+    color:#8FE3CF;
+    transition: 0.5s;
+    border-radius: 5px;
+    cursor: pointer;
+    scale: 1.1;
+}
+.icon-g:active{
+    color:#ffffff;
+    transition: 0.3s;
+}
+.icon-g-active{
+    color:#ffffff;
+    border-radius: 5px;
+}
+.ic-g{
+    justify-content: center;
+    margin-top: -50px;
+    margin-bottom: 100px;
+}

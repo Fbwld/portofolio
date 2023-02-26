@@ -13,7 +13,7 @@
     background-color: transparent;
     border-radius: 10px;
     cursor: pointer;
-    border-color:  #e7eeec;
+    border-color:  #8FE3CF;
     z-index: 1040;
     position: relative;
     color: #8FE3CF ;
@@ -27,7 +27,7 @@
   .banner {
     background: #0a192f;
     margin-top: 0;
-    padding: 100px 150px 100px 150px;
+    padding: 130px 150px 100px 150px;
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;

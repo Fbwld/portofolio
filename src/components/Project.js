@@ -8,7 +8,8 @@ import TrackVisibility from 'react-on-screen';
 import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/project1.png";
 import projImg2 from "../assets/img/project2.png";
-import projImg3 from "../assets/img/civil.jpeg";
+import projImg3 from "../assets/img/civil-1.jpeg";
+import projImg4 from "../assets/img/calculator-1.jpeg";
 import "../css/ProjectCard.css";
 import AOS from 'aos';
 import "aos/dist/aos.css"
@@ -35,7 +36,7 @@ export function Project() {
     {
       title: "Calculator and Todo List",
       description: "A calculator and to-do list application used to organize daily activities.",
-      imgUrl: projImg3,
+      imgUrl: projImg4,
       urlgithub:"https://github.com/Fbwld/calculator-todolist.git",
       urlLink:""
     },
