@@ -28,36 +28,36 @@ export function Skills() {
             <Col className="d-felx" xs={12} md={6} xl={6} data-aos="fade-right" data-aos-duration="2000">
               <div className="s-left">
                 <h2>FrontEnd Developer</h2>
-                <div className="s-row" >
-                  <div className="s-column">
-                    <div>
-                      <h3><IoLogoHtml5 className="s-logo"/>Html</h3>
-                      <p>Experienced</p>
-                    </div> 
-                    <div>
-                      <h3><FaCss3Alt className="s-logo"/>CSS</h3>
-                      <p>Experienced</p>
+                  <div className="s-row" >
+                    <div className="s-column">
+                      <div>
+                        <h3><IoLogoHtml5 className="s-logo"/>Html</h3>
+                        <p>Experienced</p>
+                      </div>  
+                      <div>
+                        <h3><FaCss3Alt className="s-logo"/>CSS</h3>
+                        <p>Experienced</p>
+                      </div>
+                      <div>
+                        <h3><FaBootstrap className="s-logo"/> Boostrap</h3>
+                        <p>Experienced</p>
+                      </div>
                     </div>
-                    <div>
-                      <h3><FaBootstrap className="s-logo"/>Boostrap</h3>
+                    <div className="s-column">
+                      <div>
+                        <h3><IoLogoJavascript className="s-logo"/>Javascript</h3>
+                        <p>Experienced</p>
+                      </div>
+                      <div>
+                      <h3><FaReact className="s-logo"/>ReactJs</h3>
                       <p>Experienced</p>
+                      </div>
+                      <div>
+                        <h3><TbBrandReactNative className="s-logo"/>ReactNative</h3>
+                        <p>Experienced</p>
+                      </div> 
                     </div>
                   </div>
-                  <div className="s-column">
-                    <div>
-                      <h3><IoLogoJavascript className="s-logo"/>Javascript</h3>
-                      <p>Experienced</p>
-                    </div>
-                    <div>
-                    <h3><FaReact className="s-logo"/>ReactJs</h3>
-                    <p>Experienced</p>
-                    </div>
-                    <div>
-                      <h3><TbBrandReactNative className="s-logo"/>ReactNative</h3>
-                      <p>Experienced</p>
-                    </div> 
-                  </div>
-                </div>
               </div> 
             </Col>
             <Col xs={12} md={6} xl={6} data-aos="fade-left" data-aos-duration="2000">
